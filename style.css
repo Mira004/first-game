@@ -1,0 +1,14 @@
+#button{
+    height:30px;
+width:70px;
+background-color:rgb(67, 255, 61);
+border:none;
+border-radius:6px;
+color:white;
+font-size:20px;
+font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+.label{
+    font-size:40px;
+}
