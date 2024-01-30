@@ -1,17 +1,24 @@
-let rollBtn;
-const min=1;
+const button=document.getElementById('button');
+const p1=document.getElementById('p1');
+const p2 =document.getElementById('p2');
+const p3=document.getElementById('p3');
 const max=5;
-let num1;
-let num2;
-let num3;
-rollBtn=document.getElementById('button').onclick=function(){
+const min=1;
+let result1, result2,result3;
 
-num1=Math.floor(Math.random() *max)+min;
-num2=Math.floor(Math.random() *max)+min;
-num3=Math.floor(Math.random() *max)+min;
+button.onclick=function(){
 
+    result1=Math.floor(Math.random()*max)+min;
+p1.textContent=result1;
+result2=Math.floor(Math.random()*max)+min;
+p2.textContent=result2;
+result3=Math.floor(Math.random()*max)+min;
+p3.textContent=result3;
+if(result1==result2 && result1==result3 && result2==result3){
+p4.textContent=" Congrats You win!";
 
-mylabel1.textContent=num1;
-mylabel2.textContent=num2;
-mylabel3.textContent=num3;
+}else{
+    p4.textContent="You lose! try again ";
+}
+
 }
